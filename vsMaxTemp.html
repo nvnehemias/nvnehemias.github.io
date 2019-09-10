@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- CSS Stylesheets with Relative Paths -->
+<html lang="en-us">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body style>
+    <!-------------------This section is the header of the page that has to links to all of the other pages------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class = "container-fluid">
+                <a class="navbar-brand" href="index.html">Lattitude</a>
+                <div class="navbar-nav navbar right">
+                    <ul class="navbar-nav">
+                        <li class= "nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="plots.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="vsMaxTemp.html">Max Temperature</a>
+                                <a class="dropdown-item" href="vsHumidity.html">Humidity</a>
+                                <a class="dropdown-item" href="vsCloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="vsWindSpeed.html">Wind Speed</a>
+                            </div>
+                        </li>
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Comparison.html">Comparison</a>
+                        </li>
+                    
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Data.html">Data</a>
+                        </li>
+                    
+                    </ul>
+                </div>
+            </div>
+    </nav>
+    <br>
+    <!-------------------This section will hold the image and the description of the image. On the side will be the visualization table with all images-->
+    <main role="main" class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-7" blog-main style="background-color:white;">
+                    <div class="col big-box">
+                        <h1 class="pb-4 mb-4 border-bottom">
+                            <b>Max Temperature</b>
+                        </h1>
+                        <div class="text-center">
+                            <img src="ss1.png" align="center" width="450" height="300"> 
+                        </div>
+                        <p>  
+                            As we expected, the weather becomes significantly warmer as one approaches the equator
+                            (0 Deg. Lattitude). Most interestingly, however, is the fact that the southern hemisphere
+                            tends to be warmer at this time of year than the northern hemisphere. This may be due to
+                            the tilt of the earth at the time of year this data was gathered.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5" style="background-color:#efeee7;">
+                    <div class="row justify-content-around">
+                        <div class="p-4 mb-3 bg-light" style="background-color:white">
+                            <h1 class="pb-4 mb-4 border-bottom">
+                                <b>Visualization</b>
+                            </h1>
+                            <a href="vsMaxTemp.html">
+                                <img src="ss1.png" align="left" width="150" height="100">
+                            </a>
+                            <a href="vsHumidity.html">
+                                <img src="ss2.png" align="left" width="150" height="100">
+                            </a>
+                            <br>
+                            <a href="vsCloudiness.html">
+                                <img src="ss3.png" align="left" width="150" height="100">
+                            </a>
+                            <br>
+                            <a href="vsWindSpeed.html">
+                                <img src="ss4.png" align="left" width="150" height="100">
+                            </a>
+                        </div>
+                    </div>
+                </div>   
+            </div> 
+    </main> 
+</body>
